@@ -29,29 +29,25 @@ function Walkthrough() {
                 ref={swiperRef}
             >
                 {welcomeData.map((item, index) => (
-                    <SwiperSlide key={index}>
-                        <div className="flex-Column align-items-center">
+                    <SwiperSlide key={index} className="slide-container">
                             <div className="phone-image-container w-100 position-relative">
                                 <img
                                     src={item.image}
                                     alt="Phone with app"
                                     className="phone-image h-100 position-absolute"
                                 />
-                            </div>
-                            <div className=' w-100 position-relative'>
                                 <img src={vector} alt="shap rounded" className="rounded-container position-absolute" />
-                                <div className="text-container flex-Column align-items-center w-100 position-relative gap-40">
+
+                            </div>
+                            <div className='position-relative flex-Column align-items-center gap-40 text-container '>
                                     <h2 className="primary-dark-color">{item.title}</h2>
                                     <span className="paraXlargeR grey-color-900">{item.description}</span>
-                                </div>
                             </div>
-
-                        </div>
                     </SwiperSlide>
                 )
                 )}
             </Swiper>
-            <div className='btn-groupe flex-row align-items-center justify-content-center'>
+            <div className='btn-groupe flex-row align-items-center justify-content-center gap-40'>
                 {activeIndex === 2 ? (
                     <button className="button-primary w-100" onClick={() => navigate("/login")}>c&apos;est parti !</button>
                 ) : (

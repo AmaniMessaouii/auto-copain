@@ -466,21 +466,21 @@ h6 {
 
 .phone-image-container {
   background-color: var(--blue);
-  height: 600px;
+  height: 55%;
 }
 
 .phone-image {
   max-width: 280px;
   height: 570px;
   z-index: 0;
-  top: 330px;
+  top: 50px;
   object-fit: contain;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
 }
 
 .rounded-container {
   left: 0;
-  top: -220px;
+  top: 90%;
 }
 
 .text-container {
@@ -488,15 +488,13 @@ h6 {
   max-width: 400px;
   z-index: 1;
   margin: auto;
-  top: -100px;
+  top: 10%;
   /* padding: 16px 24px 40px 24px; */
 }
 
-
-
 .swiper {
   width: 100%;
-  height: 85vh;
+  height: calc(100vh - 138px);
 }
 
 .swiper-slide {
@@ -524,9 +522,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active.swiper-pagination-
 }
 
 .btn-groupe {
-  margin: 40px auto;
-  gap: 40px;
-  width: 80%;
+  margin: 40px 24px;
 }
 
 .pass-btn {
